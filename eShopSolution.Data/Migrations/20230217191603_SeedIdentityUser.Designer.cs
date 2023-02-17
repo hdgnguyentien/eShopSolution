@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using eShopSolution.Data.EF;
 
 namespace eShopSolution.Data.Migrations
 {
     [DbContext(typeof(EShopDbContext))]
-    partial class EShopDbContextModelSnapshot : ModelSnapshot
+    [Migration("20230217191603_SeedIdentityUser")]
+    partial class SeedIdentityUser
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -150,7 +152,6 @@ namespace eShopSolution.Data.Migrations
                             Key = "HomeDescription",
                             Value = "This is description of eShopSolution"
                         });
-
                 });
 
             modelBuilder.Entity("eShopSolution.Data.Entities.AppRole", b =>
@@ -273,7 +274,6 @@ namespace eShopSolution.Data.Migrations
                             TwoFactorEnabled = false,
                             UserName = "admin"
                         });
-
                 });
 
             modelBuilder.Entity("eShopSolution.Data.Entities.Cart", b =>
@@ -613,11 +613,7 @@ namespace eShopSolution.Data.Migrations
                         new
                         {
                             Id = 1,
-
                             DateCreated = new DateTime(2023, 2, 18, 2, 16, 2, 506, DateTimeKind.Local).AddTicks(2778),
-
-                            DateCreated = new DateTime(2023, 2, 18, 0, 57, 36, 479, DateTimeKind.Local).AddTicks(8459),
-
                             OriginalPrice = 100000m,
                             Price = 200000m,
                             Stock = 0,
