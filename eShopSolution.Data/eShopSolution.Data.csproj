@@ -5,17 +5,37 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.1.1">
+    <Compile Remove="Migrations\20230217183416_AspNetCoreIdentityDatabase.cs" />
+    <Compile Remove="Migrations\20230217183416_AspNetCoreIdentityDatabase.Designer.cs" />
+    <Compile Remove="Migrations\20230217184356_AspNetCoreIdentityDatabase.cs" />
+    <Compile Remove="Migrations\20230217184356_AspNetCoreIdentityDatabase.Designer.cs" />
+    <Compile Remove="Migrations\20230217184618_AspNetCoreIdentityDatabase.cs" />
+    <Compile Remove="Migrations\20230217184618_AspNetCoreIdentityDatabase.Designer.cs" />
+    <Compile Remove="Migrations\20230217185127_AspNetCoreIdentityDatabase.cs" />
+    <Compile Remove="Migrations\20230217185127_AspNetCoreIdentityDatabase.Designer.cs" />
+    <Compile Remove="Migrations\20230217185558_AspNetCoreIdentityDatabase.cs" />
+    <Compile Remove="Migrations\20230217185558_AspNetCoreIdentityDatabase.Designer.cs" />
+    <Compile Remove="Migrations\20230217185740_AspNetCoreIdentityDatabase.cs" />
+    <Compile Remove="Migrations\20230217185740_AspNetCoreIdentityDatabase.Designer.cs" />
+    <Compile Remove="Migrations\20230217185917_AspNetCoreIdentityDatabase.cs" />
+    <Compile Remove="Migrations\20230217185917_AspNetCoreIdentityDatabase.Designer.cs" />
+    <Compile Remove="Migrations\20230217190007_AspNetCoreIdentityDatabase.cs" />
+    <Compile Remove="Migrations\20230217190007_AspNetCoreIdentityDatabase.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="3.1.32" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.1.32">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
-    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.1" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.1">
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.32" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.32">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
-    <PackageReference Include="Microsoft.Extensions.Configuration.FileExtensions" Version="3.1.1" />
-    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="3.1.1" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.FileExtensions" Version="3.1.32" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="3.1.32" />
   </ItemGroup>
 
 </Project>
