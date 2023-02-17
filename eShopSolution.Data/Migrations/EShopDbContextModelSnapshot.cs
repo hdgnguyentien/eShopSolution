@@ -150,6 +150,7 @@ namespace eShopSolution.Data.Migrations
                             Key = "HomeDescription",
                             Value = "This is description of eShopSolution"
                         });
+
                 });
 
             modelBuilder.Entity("eShopSolution.Data.Entities.AppRole", b =>
@@ -272,6 +273,7 @@ namespace eShopSolution.Data.Migrations
                             TwoFactorEnabled = false,
                             UserName = "admin"
                         });
+
                 });
 
             modelBuilder.Entity("eShopSolution.Data.Entities.Cart", b =>
@@ -611,7 +613,11 @@ namespace eShopSolution.Data.Migrations
                         new
                         {
                             Id = 1,
+
                             DateCreated = new DateTime(2023, 2, 18, 2, 16, 2, 506, DateTimeKind.Local).AddTicks(2778),
+
+                            DateCreated = new DateTime(2023, 2, 18, 0, 57, 36, 479, DateTimeKind.Local).AddTicks(8459),
+
                             OriginalPrice = 100000m,
                             Price = 200000m,
                             Stock = 0,

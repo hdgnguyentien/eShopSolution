@@ -1,6 +1,8 @@
 ﻿using eShopSolution.Data.Entities;
 using eShopSolution.Data.Enums;
-using Microsoft.AspNetCore.Identity;
+
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -88,6 +90,7 @@ namespace eShopSolution.Data.Extensions
                 new ProductInCategory() { ProductId = 1, CategoryId = 1}
                 );
 
+
             var roleID = new Guid("09120475-3020-4682-a2eb-23f3915051d6");
             var adminID = new Guid("FCF90235-67A7-4A8C-B7E0-81CC988CCF74");
             modelBuilder.Entity<AppRole>().HasData(new AppRole
@@ -119,6 +122,7 @@ namespace eShopSolution.Data.Extensions
                 RoleId = roleID,
                 UserId = adminID
             });
+
 
         }
     }
