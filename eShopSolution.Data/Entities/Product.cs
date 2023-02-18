@@ -17,5 +17,6 @@ namespace eShopSolution.Data.Entities
         public List<OrderDetail> OrderDetails { get; set; }
         public List<ProductTranslation> ProductTranslations { get; set; }
         public List<ProductInCategory> ProductInCategories { get; set; }
+        public List<ProductImage> ProductImages { get; set; }
     }
 }
